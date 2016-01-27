@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="main-logo">
+         <a href="#">
+           <img src="img/logo.png" width="139" height="56" alt="Нёрдс">
+         </a>
+         </div>
+          <nav class="main-navigation">
+             <ul>
+               <li>
+                 <a href="#">Студия </a>
+               </li>
+               <li>
+                 <a href="#">Клиенты</a>
+               </li>
+               <li>
+                 <a href="#">Магазин</a>
+               </li>
+               <li>
+                 <a href="#">Контакты</a>
+               </li>
+             </ul>
+           </nav>
+        <div class="user-block">
+          <a class="cart" href="#">Корзина</a>
+        </div>
+        <h1>Добро пожаловать в магазин готовых макетов</h1>
+      </div>
+    </header>
+    <main class="container">
+      <div class="content clearfix">
+          <form action="#" method="post" class="filter" name="sort" >
+            <fieldset class="filter-price">
+              <legend>Стоимость:</legend>
+              <input type="range" min="0" max="15000" step="1" value="10">
+    			    от <output name="result-1">0</output> до <output name="result-2">15000</output>
+
+            </fieldset>
+            <fieldset class="filter-grid">
+              <legend>Сетка:</legend>
+              <input type="radio" name="grid" value="Адаптивная">
+              <label>Адаптивная</label>
+              <input type="radio" name="grid" value="Фиксированная">
+              <label>Фиксированная</label>
+              <input type="radio" name="grid" value="Резиновая">
+              <label>Резиновая</label>
+            </fieldset>
+            <fieldset class="filter-features">
+              <legend>Особенности:</legend>
+                <input type="checkbox" name="features-slider" id="catalog-item--slider" checked>
+                <label for="catalog-item--slider">Слайдер</label>
+                <input type="checkbox" name="features-block" id="catalog-item--block">
+                <label for="catalog-item--block">Блок преимуществ</label>
+                <input type="checkbox" name="features-news" id="catalog-item--news" checked>
+                <label for="catalog-item--news">Новости</label>
+                <input type="checkbox" name="features-gallery" id="catalog-item--gallery">
+                <label for="catalog-item--gallery">Галерея</label>
+                <input type="checkbox" name="features-cart" id="catalog-item--cart">
+                <label for="catalog-item--cart">Корзина</label>
+            </fieldset>
+            <input class="btn" type="submit" value="Показать">
+          </form>
+          <div class="content-right">
+              <form class="sort">
+                <legend>Сортировать:</legend>
+              </form>
+              <div class="catalog">
+              <div class="catalog-item">
+                <div class="item-photo">
+                  <a href="#">
+                    <img src="img/item-1.jpg" width="" height="" alt="Aviator">
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="item-name">Aviator</p>
+                  <p class="item-title"><span class="item-title-block">Одностраничный макет</span><span class="item-title-block"> с авторским дизайном</span></p>
+                  <div class="item-price-btn">
+                    <a class="btn-add-cart" href="#">8000р.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page-navigation">
+              <a class="page-btn active" href="#">1</a>
+              <a class="page-btn" href="#">2</a>
+              <a class="page-btn" href="#">3</a>
+              <a class="page-btn" href="#">4</a>
+              <a class="page-btn" href="#">Следующая</a>
+            </div>
+          </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="footer-contacts">
+        <div class="contacts-info">
+          <b class="info-name">
+            NЁRDS DESIGN STUDIO
+          </b>
+          <p class="info-title">
+            <span class="info-title-block">191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</span>
+            <span class="info-title-block">тел. +7 (812) 275-75-75</span>
+          </p>
+          <a class="footer-contacts-btn" href="#">Напиши нам</a>
+        </div>
+        <div class="contacts-map">
+          <img class="map" src="img/map.jpg"  width="" height="" alt="Карта" />
+          <img class="map-position" src="img/map-nerds.png"  width="" height="" alt="Позиция" />
+        </div>
+      </div>
+      <div class="footer-social">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        <b class="footer-social-name">
+          Давайте дружить,это выгодно!
+        </b>
+        <p>
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
