@@ -5,3 +5,97 @@ body {
     font-weight: normal;
     font-family: "Roboto", serif;
 }
+
+.container {
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-logo {
+  float: left;
+  width: 140px;
+  min-height: 70px;
+}
+.main-navigation {
+  float: left;
+  width: 400px;
+  min-height: 70px;
+}
+.user-block {
+  float: right;
+  width: 100px;
+  min-height: 70px;
+}
+.slider-name,.slider-title,.slider-btn {
+  display: block;
+  float: left;
+  width: 380px;
+  margin-right: 80px;
+  /*background: rgba(255, 255, 0, 0.2);*/
+}
+.slider img {
+  float: right;
+  width: 300px;
+  /*background: rgba(255, 255, 0, 0.2);*/
+  margin-bottom: 100px;
+}
+
+.features {
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 60px;
+}
+.features-item {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+.features-item:last-child{
+  float: right;
+  margin-right: 0px;
+}
+
+.studio {
+  padding: 50px 0px;
+  margin: 0 auto;
+  width: 880px;
+}
+.content .left {
+    float: left;
+  width: 575px;
+  margin-right: 60px;
+}
+.content .right {
+    float: right;
+  width: 240px;
+  }
+
+.partners-item {
+  float: left;
+  width: 220px;
+  margin-right: 60px;
+}
+.map {
+  width: 100%;
+  height: 415px;
+}
+.contacts-info {
+  float: left;
+  width: 250px;
+  margin-bottom: 20px;
+}
+.footer-social {
+  float: left;
+  width: 240px;
+}
+.footer-social-title {
+  float: right;
+  width: 550px;
+}
