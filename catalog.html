@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -32,7 +33,7 @@
         <div class="user-block">
           <a class="cart" href="#">Корзина</a>
         </div>
-        <h1>Добро пожаловать в магазин готовых макетов</h1>
+        <h1 class="main-title">Добро пожаловать в магазин <br> готовых макетов</h1>
       </div>
     </header>
     <main class="container">
@@ -69,9 +70,18 @@
             <input class="btn" type="submit" value="Показать">
           </form>
           <div class="content-right">
-              <form class="sort">
-                <legend>Сортировать:</legend>
-              </form>
+              <div class="sort">
+                <p class="sort-text">Сортировать:</p>
+                <div class="sort-type">
+                  <a href="#" class="sort-type-link">По цене</a>
+                  <a href="#" class="sort-type-link">По типу</a>
+                  <a href="#" class="sort-type-link">По функционалу</a>
+                </div>
+                <div class="sort-direction">
+                  <a href="#" class="sort-direction-link-up" ></a>
+                  <a href="#" class="sort-direction-link-down" ></a>
+                </div>
+              </div>
               <div class="catalog">
               <div class="catalog-item">
                 <div class="item-photo">
@@ -87,6 +97,76 @@
                   </div>
                 </div>
               </div>
+              <div class="catalog-item">
+                <div class="item-photo">
+                  <a href="#">
+                    <img src="img/item-2.jpg" width="" height="" alt="Aviator">
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="item-name">Sunset</p>
+                  <p class="item-title"><span class="item-title-block">Интернет магазин</span><span class="item-title-block"> с личным кабинетом</span></p>
+                  <div class="item-price-btn">
+                    <a class="btn-add-cart" href="#">10000р.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <div class="item-photo">
+                  <a href="#">
+                    <img src="img/item-3.jpg" width="" height="" alt="Aviator">
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="item-name">Forte</p>
+                  <p class="item-title"><span class="item-title-block">Отличный макет</span><span class="item-title-block"> для личного блога</span></p>
+                  <div class="item-price-btn">
+                    <a class="btn-add-cart" href="#">5000р.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <div class="item-photo">
+                  <a href="#">
+                    <img src="img/item-4.jpg" width="" height="" alt="Aviator">
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="item-name">Moder organic thai</p>
+                  <p class="item-title"><span class="item-title-block">Сайт для ресторана</span><span class="item-title-block"> быстрого питания</span></p>
+                  <div class="item-price-btn">
+                    <a class="btn-add-cart" href="#">12000р.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <div class="item-photo">
+                  <a href="#">
+                    <img src="img/item-5.jpg" width="" height="" alt="Aviator">
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="item-name">Avenue</p>
+                  <p class="item-title"><span class="item-title-block">Макет для блога</span><span class="item-title-block"> о путешествиях</span></p>
+                  <div class="item-price-btn">
+                    <a class="btn-add-cart" href="#">8000р.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <div class="item-photo">
+                  <a href="#">
+                    <img src="img/item-6.jpg" width="" height="" alt="Aviator">
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="item-name">Dovetail</p>
+                  <p class="item-title"><span class="item-title-block">Интернет магазин</span><span class="item-title-block"> с галереей товаров</span></p>
+                  <div class="item-price-btn">
+                    <a class="btn-add-cart" href="#">14000р.</a>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="page-navigation">
               <a class="page-btn active" href="#">1</a>
@@ -99,17 +179,19 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="map">
+      <div class="map clearfix">
         <div class="container">
           <div class="contacts-info">
-            <h2 class="info-name">
-              NЁRDS DESIGN STUDIO
-            </h2>
-            <p class="info-title">
-              <span class="info-title-block">191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</span>
-              <span class="info-title-block">тел. +7 (812) 275-75-75</span>
-            </p>
-            <a class="footer-contacts-btn" href="#">Напиши нам</a>
+            <div class="contacts-text">
+              <h2 class="info-name">
+                NЁRDS DESIGN STUDIO
+              </h2>
+              <p class="info-title">
+                <span class="info-title-block">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</span><br>
+                <span class="info-title-block">тел. +7 (812) 275-75-75</span>
+              </p>
+              <a class="btn footer-contacts-btn" href="#">Напиши нам</a>
+            </div>
           </div>
         </div>
       </div>

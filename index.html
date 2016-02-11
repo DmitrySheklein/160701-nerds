@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -35,23 +36,34 @@
           </div>
         </div>
         <div class="slider clearfix">
-          <div class="slider-item">
-            <b class="slider-name"><span class="slider-name-block">Долго,дорого,</span><span class="slider-name-block">скрупулёзно.</span><b>
-            <p class="slider-title"><span class="slider-title-block">Математически выверенный дизайн</span><span class="slider-title-block">для вашего сайта или мобильного приложения.</span></p>
-            <a class="slider-btn" href="#">Узнать больше</a>
-            <img src="img/slider-1.png" height="" width="230px" alt="">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
           </div>
           <div class="slider-item">
-            <b class="slider-name"><span class="slider-name-block">Любите ли вы математику,</span><span class="slider-name-block">Как любим ее мы?</span><b>
-            <p class="slider-title"><span class="slider-title-block">Нашим дизайнерам мы удаляем нейтроны, ответственные</span><span class="slider-title-block">за креатив, чтобы дать им возможность всё просчитать</span></p>
-            <a class="slider-btn" href="#">Узнать больше</a>
-            <img src="img/slider-2.png" height="" width="" alt="">
+            <div class="slider-text">
+              <p class="slider-name"><span class="slider-name-block">Долго,дорого,</span><span class="slider-name-block">скрупулёзно.</span></p>
+              <p class="slider-title"><span class="slider-title-block">Математически выверенный дизайн</span><span class="slider-title-block">для вашего сайта или мобильного приложения.</span></p>
+              <a class="slider-btn" href="#">Узнать больше</a>
+            </div>
           </div>
           <div class="slider-item">
-            <b class="slider-name"><span class="slider-name-block">Только наркотики,</span><span class="slider-name-block">только хардкор!</span><b>
-            <p class="slider-title"><span class="slider-title-block">Все дизайнерские решения в нашей компании принимаются</span><span class="slider-title-block">только под воздействием качественных галлюциногенов</span></p>
-            <a class="btn slider-btn" href="#">Узнать больше</a>
-            <img src="img/slider-3.png" height="" width="" alt="">
+            <div class="slider-text">
+              <p class="slider-name"><span class="slider-name-block">Любите ли вы математику,</span><span class="slider-name-block">Как любим ее мы?</span></p>
+              <p class="slider-title"><span class="slider-title-block">Нашим дизайнерам мы удаляем нейтроны, ответственные</span><span class="slider-title-block">за креатив, чтобы дать им возможность всё просчитать</span></p>
+              <a class="slider-btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-text">
+              <p class="slider-name"><span class="slider-name-block">Только наркотики,</span><span class="slider-name-block">только хардкор!</span></p>
+              <p class="slider-title"><span class="slider-title-block">Все дизайнерские решения в нашей компании принимаются</span><span class="slider-title-block">только под воздействием качественных галлюциногенов</span></p>
+              <a class="btn slider-btn" href="#">Узнать больше</a>
+            </div>
           </div>
         </div>
       </div>
@@ -91,7 +103,7 @@
       </div>
       <div class="studio clearfix">
           <div class="content left">
-            <p><b class="studio-title">Мы-маленькая,но гордая дизайн-студия из Краснодара.</b></p>
+            <p><p class="studio-title">Мы-маленькая,но гордая дизайн-студия из Краснодара.</p></p>
             <p class="studio-text">
               Исповедуем принципы минимализма и чистоты. Ставим математический расчет
               выше креатива. Работаем не покладая рук, как роботы.
@@ -119,7 +131,7 @@
             </ul>
           </div>
         </div>
-        <div class="partners">
+        <div class="partners clearfix">
           <a class="partners-item" href="#">
             <img src="img/studio-glukhanko.png" width="" height="" alt="glukhanko" />
           </a>
@@ -135,14 +147,16 @@
         <div class="map clearfix">
           <div class="container">
             <div class="contacts-info">
-              <h2 class="info-name">
-                NЁRDS DESIGN STUDIO
-              </h2>
-              <p class="info-title">
-                <span class="info-title-block">191186, Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</span>
-                <span class="info-title-block">тел. +7 (812) 275-75-75</span>
-              </p>
-              <a class="btn footer-contacts-btn" href="#">Напиши нам</a>
+              <div class="contacts-text">
+                <h2 class="info-name">
+                  NЁRDS DESIGN STUDIO
+                </h2>
+                <p class="info-title">
+                  <span class="info-title-block">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</span><br>
+                  <span class="info-title-block">тел. +7 (812) 275-75-75</span>
+                </p>
+                <a class="btn footer-contacts-btn" href="#">Напиши нам</a>
+              </div>
             </div>
           </div>
         </div>
