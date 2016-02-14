@@ -26,10 +26,11 @@ body {
   display: block;
   float: left;
   width: 140px;
+  height: 55px;
 }
 .main-navigation {
   float: left;
-  min-width: 400px;
+  max-width: 400px;
 
 }
 .user-block {
@@ -45,6 +46,16 @@ body {
   display: none;
 }
 
+.slider-controls {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+
+  width: 200px;
+  margin-left: -100px;
+
+  text-align: center;
+}
 .slider-controls label {
   display: inline-block;
   width: 4px;
@@ -59,30 +70,20 @@ body {
   cursor: pointer;
 }
 
-.slider-controls {
-  position: absolute;
-  bottom: 95px;
-  left: 50%;
-
-  width: 200px;
-  margin-left: -100px;
-
-  text-align: center;
-}
 
 .slider-item {
   display: none;
 }
 
-#btn-1:checked ~ .slider .slider-item:nth-child(2) {
+#btn-1:checked ~ .slides .slider-item:nth-child(1) {
   display: block;
 }
 
-#btn-2:checked ~ .slider .slider-item:nth-child(3) {
+#btn-2:checked ~ .slides .slider-item:nth-child(2) {
   display: block;
 }
 
-#btn-3:checked ~ .slider .slider-item:nth-child(4) {
+#btn-3:checked ~ .slides .slider-item:nth-child(3) {
   display: block;
 }
 
@@ -119,11 +120,12 @@ body {
 .slider-btn {
   display: block;
   width: 220px;
-  padding: 10px 10px;
+  padding: 12px 10px;
   margin-top: 25px;
 
   font-weight: 300;
   font-size: 12px;
+  line-height: 18px;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -142,9 +144,8 @@ body {
 .slider-item:nth-child(3) {
   background-image: url("../img/slider-3.png");
 }
-
-
 /**/
+
 .features {
   margin-top: 80px;
   margin-bottom: 60px;
@@ -174,6 +175,12 @@ body {
 
   background-color: #fb565a;
   border-radius: 3px;
+}
+.features-item:nth-child(2) .features-btn {
+  background-color: #00ca74;
+}
+.features-item:nth-child(3) .features-btn {
+  background-color: #efc84a;
 }
 
 .content.left {
@@ -216,40 +223,73 @@ body {
 }
 .map {
   min-height: 415px;
+  margin-top: 85px;
+background: #e9e5dc url("../img/map.png") no-repeat ;
+background-position: 50% 40%;
 }
 
 .contacts-info {
   width: 250px;
-  min-height: 240px;
   background-color: #fff;
   position: relative;
+  padding: 30px 0 0 20px;
 }
-
-.contacts-text {
-  width: 90%;
-  height: 120px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -120px 0 0 -45%;
+.info-name {
   font-size: 16px;
   line-height: 30px;
 }
+
+.info-title {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer-contacts-btn {
+  width: 200px;
+  padding: 10px 0;
+}
+
 .info-title-block {
   display: block;
   font-size: 16px;
   line-height: 20px;
   color: #666;
 }
+
+.footer-contact{
+  margin-top: 80px;
+}
+
 .footer-social {
   float: left;
   width: 240px;
+  font-size: 0;
 }
 .footer-social-title {
   float: right;
   width: 550px;
 }
 
+.contact-btn {
+  display: inline-block;
+  border: 30px solid #e1e1e1;
+  border-radius: 50%;
+}
+
+.footer-social-title {
+  text-align: left;
+  vertical-align: top;
+}
+.footer-social-name {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 1000;
+}
+
+.footer-social-text {
+  font-size: 16px;
+  line-height: 22px;
+}
 /*Каталог*/
 .main-title{
   clear: both;
