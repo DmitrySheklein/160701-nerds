@@ -8,7 +8,39 @@ body {
     font-family: "Roboto", "Arial", sans-serif;
 }
 
+.sprite {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cart {
+    width: 15px;
+    height: 15px;
+    background-position: -10px -10px;
+}
+
+.sprite-fb {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -45px;
+}
+
+.sprite-inst {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -87px;
+}
+
+.sprite-vk {
+    width: 26px;
+    height: 15px;
+    background-position: -10px -128px;
+}
+
+
 .main-header {
+  padding-top: 25px;
   background: #eee;
 }
 .container {
@@ -30,13 +62,83 @@ body {
 }
 .main-navigation {
   float: left;
-  max-width: 400px;
+  max-width: 500px;
+
+  margin-left: 150px;
 
 }
 .user-block {
   float: right;
   max-width: 100px;
 }
+/*Оформление шапки*/
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 25px 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+.main-navigation a:hover {
+  color: #fb565a;
+}
+
+.main-navigation a:active {
+  color: #ababab;
+}
+
+.cart {
+  position: relative;
+
+  display: inline-block;
+  padding: 25px 0px;
+  padding-left: 50px;
+
+  font-size: 14px;
+  line-height: 30px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cart:hover {
+  color: #fb565a;
+}
+
+.cart:active {
+  color: #ababab;
+}
+
+.cart::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 18px;
+  width: 30px;
+  height: 25px;
+  transform: scale(0.8);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+/**/
 /*слайдер*/
 .slider {
   position: relative;
@@ -134,7 +236,13 @@ body {
   background-color: #fb565a;
   border-radius: 3px;
 }
-
+.slider-btn:hover {
+  background-color: #d6494d;
+}
+.slider-btn:active {
+  background-color: #b63538;
+  box-shadow: inset 0px 3px 0 0 #9b2d30;
+}
 .slider-item:nth-child(1) {
   background-image: url("../img/slider-1.png");
 }
@@ -176,11 +284,46 @@ body {
   background-color: #fb565a;
   border-radius: 3px;
 }
+.features-item:nth-child(1) .features-btn {
+  background-color: #fb565a;
+}
+.features-item:nth-child(1) .features-btn:hover {
+  background-color: #d6494d;
+}
+.features-item:nth-child(1) .features-btn:active {
+  background-color: #b63538;
+  box-shadow: inset 0px 3px 0 0 #9b2d30;
+}
 .features-item:nth-child(2) .features-btn {
   background-color: #00ca74;
 }
+.features-item:nth-child(2) .features-btn:hover {
+  background-color: #01a25e;
+}
+.features-item:nth-child(2) .features-btn:active {
+  background-color: #009053;
+  box-shadow: inset 0px 3px 0 0 #007b47;
+}
 .features-item:nth-child(3) .features-btn {
   background-color: #efc84a;
+}
+.features-item:nth-child(3) .features-btn:hover {
+  background-color: #d6ae2c;
+}
+.features-item:nth-child(3) .features-btn:active {
+  background-color: #c09b24;
+  box-shadow: inset 0px 3px 0 0 #a3841f;
+}
+
+.features-name {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.features-title {
+  font-size: 15px;
+  line-height: 22px;
+  color: #283136;
 }
 
 .content.left {
@@ -196,6 +339,40 @@ body {
   padding-top:  75px;
   margin-bottom: 75px;
   border-top: 2px solid #eee;
+}
+.studio-title {
+  font-size: 36px;
+  line-height: 36px;
+}
+.studio-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+}
+.studio-develop-title {
+  font-size 16px:
+  line-height: 22px;
+  color:#283136;
+  text-transform: uppercase;
+}
+ul.studio-develop {
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+  list-style: none;
+}
+/*как правильно задать класс для каждого пункта?*/
+ul.studio-develop li:before {
+  content: "" ;
+  position: absolute;
+
+  top: 10px;
+  left: 3px;
+  width: 25px;
+  height: 2px;
+
+  background: #fb565a;
 }
 .partners {
   border-top: 2px solid #eee;
@@ -222,17 +399,22 @@ body {
   opacity: 1;
 }
 .map {
+  position: relative;
   min-height: 415px;
   margin-top: 85px;
-background: #e9e5dc url("../img/map.png") no-repeat ;
-background-position: 50% 40%;
+  background: #e9e5dc url("../img/map.png") no-repeat ;
+  background-position: 50% 40%;
 }
 
 .contacts-info {
-  width: 250px;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 205px;
   background-color: #fff;
   position: relative;
   padding: 30px 0 0 20px;
+  padding: 30px 24px;
 }
 .info-name {
   font-size: 16px;
@@ -248,6 +430,13 @@ background-position: 50% 40%;
   width: 200px;
   padding: 10px 0;
 }
+.footer-contacts-btn:hover {
+  background-color: #d6494d;
+}
+.footer-contacts-btn:active {
+  background-color: #b63538;
+  box-shadow: inset 0px 3px 0 0 #9b2d30;
+}
 
 .info-title-block {
   display: block;
@@ -258,6 +447,7 @@ background-position: 50% 40%;
 
 .footer-contact{
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .footer-social {
@@ -269,21 +459,67 @@ background-position: 50% 40%;
   float: right;
   width: 550px;
 }
-
+/*Кнопки соц сетей*/
 .contact-btn {
   display: inline-block;
-  border: 30px solid #e1e1e1;
+  position: relative;
+
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
+  background-color: #e1e1e1;
+}
+.contact-btn{
+  margin-right: 30px;
+}
+.contact-btn:nth-child(3n){
+  margin-right: 0px;
+}
+.contact-btn:hover {
+  background: #fb565a;
+}
+.contact-btn:active {
+  background: #d6494d;
+  box-shadow: inset 0px 3px 0 0 #b63e42;
+}
+.contact-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+.contact-btn-vk::before {
+  width: 26px;
+  height: 15px;
+  background-position: -10px -128px;
+}
+.contact-btn-fb::before {
+  width: 12px;
+  height: 22px;
+  background-position: -10px -45px;
+}
+.contact-btn-inst::before {
+  width: 21px;
+  height: 21px;
+  background-position: -10px -87px;
 }
 
+/**/
 .footer-social-title {
   text-align: left;
   vertical-align: top;
 }
 .footer-social-name {
+  display: inline-block;
   font-size: 36px;
   line-height: 36px;
   font-weight: 1000;
+  padding: 0;
+  margin: 0;
+
 }
 
 .footer-social-text {
