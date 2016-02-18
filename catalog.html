@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -10,7 +11,7 @@
     <header class="main-header">
       <div class="container">
         <div class="main-logo">
-         <a href="#">
+         <a href="index.html">
            <img src="img/logo.png" width="139" height="56" alt="Нёрдс">
          </a>
          </div>
@@ -23,7 +24,7 @@
                  <a href="#">Клиенты</a>
                </li>
                <li>
-                 <a href="#">Магазин</a>
+                 <a href="#" class="active">Магазин</a>
                </li>
                <li>
                  <a href="#">Контакты</a>
@@ -31,7 +32,7 @@
              </ul>
            </nav>
         <div class="user-block">
-          <a class="cart" href="#">Корзина</a>
+          <a class="cart" href="#"><i class="icon-basket"></i>Корзина</a>
         </div>
         <h1 class="main-title">Добро пожаловать в магазин <br> готовых макетов</h1>
       </div>
@@ -39,15 +40,29 @@
     <main class="container">
       <div class="content clearfix">
           <form action="#" method="post" class="filter" name="sort" >
-            <fieldset class="filter-price">
+            <!-- <fieldset class="filter-price">
               <legend>Стоимость:</legend>
               <input type="range" min="0" max="15000" step="1" value="10">
     			    от <output name="result-1">0</output> до <output name="result-2">15000</output>
 
-            </fieldset>
+            </fieldset> -->
+            <div class="range-filter">
+              <div class="range-filter-name"> Стоимость:</div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
+            </div>
             <fieldset class="filter-grid">
               <legend>Сетка:</legend>
-              <input type="radio" name="grid" value="Адаптивная">
+              <input type="radio" name="grid" value="Адаптивная" checked>
               <label>Адаптивная</label>
               <input type="radio" name="grid" value="Фиксированная">
               <label>Фиксированная</label>
@@ -58,7 +73,7 @@
               <legend>Особенности:</legend>
                 <input type="checkbox" name="features-slider" id="catalog-item--slider" checked>
                 <label for="catalog-item--slider">Слайдер</label>
-                <input type="checkbox" name="features-block" id="catalog-item--block">
+                <input type="checkbox" name="features-block" id="catalog-item--block" disabled>
                 <label for="catalog-item--block">Блок преимуществ</label>
                 <input type="checkbox" name="features-news" id="catalog-item--news" checked>
                 <label for="catalog-item--news">Новости</label>
@@ -78,92 +93,92 @@
                   <a href="#" class="sort-type-link">По функционалу</a>
                 </div>
                 <div class="sort-direction">
-                  <a href="#" class="sort-direction-link-up" ></a>
-                  <a href="#" class="sort-direction-link-down" ></a>
+                  <a href="#" class="sort-direction-link-up" ><span class="icon-down-dir active"></span></a>
+                  <a href="#" class="sort-direction-link-down" ><span class="icon-up-dir active"></span></a>
                 </div>
               </div>
               <div class="catalog">
               <div class="catalog-item">
                 <div class="item-photo">
                   <a href="#">
-                    <img src="img/item-1.jpg" width="" height="" alt="Aviator">
+                    <img src="img/item-1.jpg" width="240" height="240" alt="Aviator">
                   </a>
                 </div>
                 <div class="item-info">
                   <p class="item-name">Aviator</p>
                   <p class="item-title"><span class="item-title-block">Одностраничный макет</span><span class="item-title-block"> с авторским дизайном</span></p>
                   <div class="item-price-btn">
-                    <a class="btn-add-cart" href="#">8000р.</a>
+                    <a class="btn btn-add-cart" href="#">8000 р.</a>
                   </div>
                 </div>
               </div>
               <div class="catalog-item">
                 <div class="item-photo">
                   <a href="#">
-                    <img src="img/item-2.jpg" width="" height="" alt="Aviator">
+                    <img src="img/item-2.jpg" width="240" height="240" alt="Sunset">
                   </a>
                 </div>
                 <div class="item-info">
                   <p class="item-name">Sunset</p>
                   <p class="item-title"><span class="item-title-block">Интернет магазин</span><span class="item-title-block"> с личным кабинетом</span></p>
                   <div class="item-price-btn">
-                    <a class="btn-add-cart" href="#">10000р.</a>
+                    <a class="btn btn-add-cart" href="#">10000 р.</a>
                   </div>
                 </div>
               </div>
               <div class="catalog-item">
                 <div class="item-photo">
                   <a href="#">
-                    <img src="img/item-3.jpg" width="" height="" alt="Aviator">
+                    <img src="img/item-3.jpg" width="240" height="240" alt="Forte">
                   </a>
                 </div>
                 <div class="item-info">
                   <p class="item-name">Forte</p>
                   <p class="item-title"><span class="item-title-block">Отличный макет</span><span class="item-title-block"> для личного блога</span></p>
                   <div class="item-price-btn">
-                    <a class="btn-add-cart" href="#">5000р.</a>
+                    <a class="btn btn-add-cart" href="#">5000 р.</a>
                   </div>
                 </div>
               </div>
               <div class="catalog-item">
                 <div class="item-photo">
                   <a href="#">
-                    <img src="img/item-4.jpg" width="" height="" alt="Aviator">
+                    <img src="img/item-4.jpg" width="240" height="240" alt="Moder organic thai">
                   </a>
                 </div>
                 <div class="item-info">
-                  <p class="item-name">Moder organic thai</p>
+                  <p class="item-name">Moder organic<br> thai</p>
                   <p class="item-title"><span class="item-title-block">Сайт для ресторана</span><span class="item-title-block"> быстрого питания</span></p>
                   <div class="item-price-btn">
-                    <a class="btn-add-cart" href="#">12000р.</a>
+                    <a class="btn btn-add-cart" href="#">12000 р.</a>
                   </div>
                 </div>
               </div>
               <div class="catalog-item">
                 <div class="item-photo">
                   <a href="#">
-                    <img src="img/item-5.jpg" width="" height="" alt="Aviator">
+                    <img src="img/item-5.jpg" width="240" height="240" alt="Avenue">
                   </a>
                 </div>
                 <div class="item-info">
                   <p class="item-name">Avenue</p>
                   <p class="item-title"><span class="item-title-block">Макет для блога</span><span class="item-title-block"> о путешествиях</span></p>
                   <div class="item-price-btn">
-                    <a class="btn-add-cart" href="#">8000р.</a>
+                    <a class="btn btn-add-cart" href="#">8000 р.</a>
                   </div>
                 </div>
               </div>
               <div class="catalog-item">
                 <div class="item-photo">
                   <a href="#">
-                    <img src="img/item-6.jpg" width="" height="" alt="Aviator">
+                    <img src="img/item-6.jpg" width="240" height="240" alt="Dovetail">
                   </a>
                 </div>
                 <div class="item-info">
                   <p class="item-name">Dovetail</p>
                   <p class="item-title"><span class="item-title-block">Интернет магазин</span><span class="item-title-block"> с галереей товаров</span></p>
                   <div class="item-price-btn">
-                    <a class="btn-add-cart" href="#">14000р.</a>
+                    <a class="btn btn-add-cart" href="#">14000 р.</a>
                   </div>
                 </div>
               </div>
@@ -198,9 +213,9 @@
       <div class="footer-contact clearfix">
         <div class="container">
           <div class="footer-social">
-            <a class="contact-btn contact-btn-vk" href="#">Вконтакте</a>
-            <a class="contact-btn contact-btn-fb" href="#">Фейсбук</a>
-            <a class="contact-btn contact-btn-inst" href="#">Инстаграм</a>
+            <a class="contact-btn" href="#">Вконтакте <span class="icon-vk"></span></a>
+            <a class="contact-btn" href="#">Фейсбук <span class="icon-facebook"></span></a>
+            <a class="contact-btn" href="#">Инстаграм <span class="icon-instagramm"></span></a>
           </div>
           <div class="footer-social-title">
             <p class="footer-social-name">
