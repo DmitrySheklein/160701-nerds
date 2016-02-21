@@ -19,7 +19,7 @@
             <nav class="main-navigation">
                <ul>
                  <li  class="active">
-                   <a href="#">Студия </a>
+                   <a href="#" class="active">Студия </a>
                  </li>
                  <li>
                    <a href="#">Клиенты</a>
@@ -48,7 +48,7 @@
           <div class="slides">
             <div class="slider-item">
               <div class="slider-text">
-                <p class="slider-name"><span class="slider-name-block">Долго, дорого,</span><span class="slider-name-block">скрупулёзно.</span></p>
+                <p class="slider-name"><span class="slider-name-block">Долго, дорого,</span><span class="slider-name-block">скрупулезно.</span></p>
                 <p class="slider-title"><span class="slider-title-block">Математически выверенный дизайн</span><span class="slider-title-block">для вашего сайта или мобильного приложения.</span></p>
                 <a class="slider-btn" href="#">Узнать больше</a>
               </div>
@@ -75,7 +75,7 @@
       <div class="features clearfix">
         <div class="features-item">
           <div class="features-item-image">
-            <img src="img/web.jpg" height="" width="" alt="Веб-сайты">
+            <img src="img/web.jpg" height="124" width="240" alt="Веб-сайты">
           </div>
           <h2 class="features-name">Веб-сайты</h2>
           <p class="features-title">
@@ -85,17 +85,17 @@
         </div>
         <div class="features-item">
           <div class="features-item-image">
-          <img src="img/apps.jpg" height="" width="" alt="Приложения">
+          <img src="img/apps.jpg" height="124" width="240" alt="Приложения">
           </div>
           <h2 class="features-name">Приложения</h2>
           <p class="features-title">
-            Покорите топ-10 приложений в AppStrore и Google Play
+            Покорите топ-10 приложений <br> в AppStrore и Google Play
           </p>
           <a class="btn features-btn" href="#">Заказать</a>
         </div>
         <div class="features-item">
           <div class="features-item-image">
-            <img src="img/presentations.jpg" height="" width="" alt="Презентации">
+            <img src="img/presentations.jpg" height="124" width="240" alt="Презентации">
           </div>
           <h2 class="features-name">Презентации</h2>
           <p class="features-title">
@@ -106,7 +106,7 @@
       </div>
       <div class="studio clearfix">
           <div class="content left">
-            <p class="studio-title">Мы-маленькая,но гордая дизайн-студия из Краснодара.</p>
+            <p class="studio-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
             <p class="studio-text">
               Исповедуем принципы минимализма и чистоты. Ставим математический расчет
               выше креатива. Работаем не покладая рук, как роботы.
@@ -148,6 +148,7 @@
     </main>
       <footer class="main-footer">
         <div class="map clearfix">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124054!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1455906339776" allowfullscreen></iframe>
           <div class="container">
             <div class="contacts-info">
               <div class="contacts-text">
@@ -172,7 +173,7 @@
             </div>
             <div class="footer-social-title">
               <p class="footer-social-name">
-                Давайте дружить,это выгодно!
+                Давайте дружить, это выгодно!
               </p>
               <p class="footer-social-text">
                 Скидка 10% для друзей из социальных сетей.
@@ -181,5 +182,17 @@
         </div>
       </div>
       </footer>
+      <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="login-form" action="#" method="post">
+        <label for="user-name">Ваше имя:</label>
+        <input class="user" type="text" name="login" placeholder="Представьтесь пожалуйста:" id="user-name">
+        <label for="user-email">Ваш e-mail:</label>
+        <input class="mail" type="email"  name="email" placeholder="Для отправки ответа" id="user-email"> 
+        <label for="user-text">Текст письма:</label>
+        <input class="textarea" type="textarea"  name="email" placeholder="В свободной форме" id="user-text">
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>

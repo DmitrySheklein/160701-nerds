@@ -18,7 +18,7 @@
           <nav class="main-navigation">
              <ul>
                <li>
-                 <a href="#">Студия </a>
+                 <a href="index.html">Студия </a>
                </li>
                <li>
                  <a href="#">Клиенты</a>
@@ -40,12 +40,6 @@
     <main class="container">
       <div class="content clearfix">
           <form action="#" method="post" class="filter" name="sort" >
-            <!-- <fieldset class="filter-price">
-              <legend>Стоимость:</legend>
-              <input type="range" min="0" max="15000" step="1" value="10">
-    			    от <output name="result-1">0</output> до <output name="result-2">15000</output>
-
-            </fieldset> -->
             <div class="range-filter">
               <div class="range-filter-name"> Стоимость:</div>
               <div class="range-controls">
@@ -62,18 +56,18 @@
             </div>
             <fieldset class="filter-grid">
               <legend>Сетка:</legend>
-              <input type="radio" name="grid" value="Адаптивная" checked>
-              <label>Адаптивная</label>
-              <input type="radio" name="grid" value="Фиксированная">
-              <label>Фиксированная</label>
-              <input type="radio" name="grid" value="Резиновая">
-              <label>Резиновая</label>
+              <input type="radio" id="adaptive" name="grid" value="Адаптивная" checked>
+              <label for="adaptive">Адаптивная</label>
+              <input type="radio" id="fixed" name="grid" value="Фиксированная">
+              <label for="fixed">Фиксированная</label>
+              <input type="radio" id="responsive" name="grid" value="Резиновая">
+              <label for="responsive">Резиновая</label>
             </fieldset>
             <fieldset class="filter-features">
               <legend>Особенности:</legend>
                 <input type="checkbox" name="features-slider" id="catalog-item--slider" checked>
                 <label for="catalog-item--slider">Слайдер</label>
-                <input type="checkbox" name="features-block" id="catalog-item--block" disabled>
+                <input type="checkbox" name="features-block" id="catalog-item--block">
                 <label for="catalog-item--block">Блок преимуществ</label>
                 <input type="checkbox" name="features-news" id="catalog-item--news" checked>
                 <label for="catalog-item--news">Новости</label>
@@ -93,8 +87,8 @@
                   <a href="#" class="sort-type-link">По функционалу</a>
                 </div>
                 <div class="sort-direction">
-                  <a href="#" class="sort-direction-link-up" ><span class="icon-down-dir active"></span></a>
-                  <a href="#" class="sort-direction-link-down" ><span class="icon-up-dir active"></span></a>
+                  <a href="#" class="sort-direction-link-up"><span class="icon-down-dir active"></span></a>
+                  <a href="#" class="sort-direction-link-down" ><span class="icon-up-dir"></span></a>
                 </div>
               </div>
               <div class="catalog">
@@ -147,7 +141,7 @@
                   </a>
                 </div>
                 <div class="item-info">
-                  <p class="item-name">Moder organic<br> thai</p>
+                  <p class="item-name">Moder organic thai</p>
                   <p class="item-title"><span class="item-title-block">Сайт для ресторана</span><span class="item-title-block"> быстрого питания</span></p>
                   <div class="item-price-btn">
                     <a class="btn btn-add-cart" href="#">12000 р.</a>
@@ -187,7 +181,6 @@
               <a class="page-btn active" href="#">1</a>
               <a class="page-btn" href="#">2</a>
               <a class="page-btn" href="#">3</a>
-              <a class="page-btn" href="#">4</a>
               <a class="page-btn" href="#">Следующая</a>
             </div>
           </div>
@@ -195,6 +188,7 @@
     </main>
     <footer class="main-footer">
       <div class="map clearfix">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124054!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1455906339776" allowfullscreen></iframe>
         <div class="container">
           <div class="contacts-info">
             <div class="contacts-text">
