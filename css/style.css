@@ -978,7 +978,7 @@ fieldset{
 
 /*Поп ап окно*/
 .modal-content {display: none;}
-/*.modal-content {
+.modal-content {
   position: absolute;
   top: 1620px;
   left: 50%;
@@ -986,13 +986,34 @@ fieldset{
   width: 630px;
   height: 415px;
   padding: 55px 80px;
+  box-sizing: border-box;
   z-index: 300;
 
   color: #000000;
 
   background: #fff ;
-  background-color: gray;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+}
+ .form-content label {
+   display: block;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+.form-content.left {
+  display: block;
+  float: left;
+  width: 220px;
+}
+.form-content.right{
+  display: block;
+  float: right;
+  width: 220px;
+}
+.form-content.center{
+  display: block;
+  clear: both;
+  padding-top: 20px;
 }
 .modal-content-close {
   position: absolute;
@@ -1019,7 +1040,7 @@ fieldset{
 
   width: 25px;
   height: 5px;
-  background-color: #d0d0d0;
+  background-color: #fff;
   border-radius: 1px;
 }
 
@@ -1036,23 +1057,51 @@ form.login-form {
 .login-form input[type="text"],
 .login-form input[type="email"],
 .login-form input[type="textarea"] {
-  width: 236px;
+  width: 200px;
   margin: 0;
   margin-bottom: 10px;
-  padding: 10px 20px;
-  padding-right: 40px;
+  padding: 10px 11px;
+  /*padding-right: 40px;*/
 
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 18px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
 
-  background-color: #f9f6f3;
-  border: 2px solid #000000;
+  background-color: #fff;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
   outline: none;
 }
-
+.login-form input[type="textarea"] {
+  width: 100%;
+}
 .login-form input:focus {
-  border-color: #663d15;
+  border-color: #56bffb;
+}
+.login-form input:hover {
+  border-color: #a2a9ac;
+}
+.modal-content-btn {
+  margin-top: 40px;
+  padding: 10px 15px;
+  background: #f1f1f1;
+  width: 100%;
+  color: #000;
+  border: none;
+  outline: none;
+  background: #f1f1f1;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
+  white-space: normal;
+}
+.modal-content-btn:hover {
+   background: #e5e5e5;
+}
+.modal-content-btn:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0 0 #b5b5b5;
 }

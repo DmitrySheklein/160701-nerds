@@ -185,13 +185,19 @@
       <div class="modal-content">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <form class="login-form" action="#" method="post">
-        <label for="user-name">Ваше имя:</label>
-        <input class="user" type="text" name="login" placeholder="Представьтесь пожалуйста:" id="user-name">
-        <label for="user-email">Ваш e-mail:</label>
-        <input class="mail" type="email"  name="email" placeholder="Для отправки ответа" id="user-email"> 
-        <label for="user-text">Текст письма:</label>
-        <input class="textarea" type="textarea"  name="email" placeholder="В свободной форме" id="user-text">
-        <button class="btn" type="submit">Отправить</button>
+        <div class="form-content left">
+          <label for="user-name">Ваше имя:</label>
+          <input class="user" type="text" name="login" placeholder="Представьтесь,пожалуйста" id="user-name">
+        </div>
+        <div class="form-content right">
+          <label for="user-email">Ваш e-mail:</label>
+          <input class="mail" type="email"  name="email" placeholder="Для отправки ответа" id="user-email">
+        </div>
+        <div class="form-content center">
+          <label for="user-text">Текст письма:</label>
+          <input class="textarea" type="textarea"  name="email" placeholder="В свободной форме" id="user-text">
+        </div>
+        <button class="btn modal-content-btn" type="submit">Отправить</button>
       </form>
     </div>
   </body>
