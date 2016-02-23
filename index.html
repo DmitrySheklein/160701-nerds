@@ -5,7 +5,6 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -49,22 +48,22 @@
           <div class="slides">
             <div class="slider-item">
               <div class="slider-text">
-                <p class="slider-name"><span class="slider-name-block">Долго, дорого,</span><span class="slider-name-block">скрупулезно.</span></p>
-                <p class="slider-title"><span class="slider-title-block">Математически выверенный дизайн</span><span class="slider-title-block">для вашего сайта или мобильного приложения.</span></p>
+                <p class="slider-name">Долго, дорого,<br>скрупулезно.</p>
+                <p class="slider-title">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
                 <a class="slider-btn" href="#">Узнать больше</a>
               </div>
             </div>
             <div class="slider-item">
               <div class="slider-text">
-                <p class="slider-name"><span class="slider-name-block">Любите ли вы математику,</span><span class="slider-name-block">Как любим ее мы?</span></p>
-                <p class="slider-title"><span class="slider-title-block">Нашим дизайнерам мы удаляем нейтроны, ответственные</span><span class="slider-title-block">за креатив, чтобы дать им возможность всё просчитать</span></p>
+                <p class="slider-name">Любите ли вы математику,<br>Как любим ее мы?</p>
+                <p class="slider-title">Нашим дизайнерам мы удаляем нейтроны, ответственные<br>за креатив, чтобы дать им возможность всё просчитать</p>
                 <a class="slider-btn" href="#">Узнать больше</a>
               </div>
             </div>
             <div class="slider-item">
               <div class="slider-text">
-                <p class="slider-name"><span class="slider-name-block">Только наркотики,</span><span class="slider-name-block">только хардкор!</span></p>
-                <p class="slider-title"><span class="slider-title-block">Все дизайнерские решения в нашей компании принимаются</span><span class="slider-title-block">только под воздействием качественных галлюциногенов</span></p>
+                <p class="slider-name">Только наркотики,<br>только хардкор!</p>
+                <p class="slider-title">Все дизайнерские решения в нашей компании принимаются<br>только под воздействием качественных галлюциногенов</p>
                 <a class="slider-btn" href="#">Узнать больше</a>
               </div>
             </div>
@@ -72,8 +71,8 @@
         </div>
       </div>
     </header>
-    <main class="container">
-      <div class="features clearfix">
+    <div class="container">
+      <div class="features">
         <div class="features-item">
           <div class="features-item-image">
             <img src="img/web.jpg" height="124" width="240" alt="Веб-сайты">
@@ -146,7 +145,7 @@
             <img src="img/studio-barbershop.png" width="209" height="90" alt="barbershop" />
           </a>
       </div>
-    </main>
+    </div>
       <footer class="main-footer">
         <div class="map clearfix">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124054!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1455906339776" allowfullscreen></iframe>
@@ -184,22 +183,23 @@
       </div>
       </footer>
       <div class="modal-content">
-      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-      <form class="login-form" action="#" method="post">
-        <div class="form-content left">
-          <label for="user-name">Ваше имя:</label>
-          <input class="user" type="text" name="login" placeholder="Представьтесь,пожалуйста" id="user-name">
-        </div>
-        <div class="form-content right">
-          <label for="user-email">Ваш e-mail:</label>
-          <input class="mail" type="email"  name="email" placeholder="Для отправки ответа" id="user-email">
-        </div>
-        <div class="form-content center">
-          <label for="user-text">Текст письма:</label>
-          <input class="textarea" type="textarea"  name="email" placeholder="В свободной форме" id="user-text">
-        </div>
-        <button class="btn modal-content-btn" type="submit">Отправить</button>
-      </form>
-    </div>
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <form class="login-form" action="#" method="post">
+          <div class="form-content left">
+            <label for="user-name">Ваше имя:</label>
+            <input class="user" type="text" name="login" placeholder="Представьтесь,пожалуйста" id="user-name">
+          </div>
+          <div class="form-content right">
+            <label for="user-email">Ваш e-mail:</label>
+            <input class="mail" type="email"  name="email" placeholder="Для отправки ответа" id="user-email">
+          </div>
+          <div class="form-content center">
+            <label for="user-text">Текст письма:</label>
+            <textarea class="textarea" name="text" placeholder="В свободной форме" id="user-text"></textarea>
+          </div>
+          <button class="btn modal-content-btn" type="submit">Отправить</button>
+        </form>
+      </div>
+      <script src="js/script.min.js"></script>
   </body>
 </html>

@@ -5,7 +5,6 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -38,7 +37,7 @@
         <h1 class="main-title">Добро пожаловать в магазин <br> готовых макетов</h1>
       </div>
     </header>
-    <main class="container">
+    <div class="container">
       <div class="content clearfix">
           <form action="#" method="post" class="filter" name="sort" >
             <div class="range-filter">
@@ -101,7 +100,7 @@
                 </div>
                 <div class="item-info">
                   <p class="item-name">Aviator</p>
-                  <p class="item-title"><span class="item-title-block">Одностраничный макет</span><span class="item-title-block"> с авторским дизайном</span></p>
+                  <p class="item-title">Одностраничный макет<br> с авторским дизайном</p>
                   <div class="item-price-btn">
                     <a class="btn btn-add-cart" href="#">8000 р.</a>
                   </div>
@@ -115,7 +114,7 @@
                 </div>
                 <div class="item-info">
                   <p class="item-name">Sunset</p>
-                  <p class="item-title"><span class="item-title-block">Интернет магазин</span><span class="item-title-block"> с личным кабинетом</span></p>
+                  <p class="item-title">Интернет магазин<br> с личным кабинетом</p>
                   <div class="item-price-btn">
                     <a class="btn btn-add-cart" href="#">10000 р.</a>
                   </div>
@@ -129,7 +128,7 @@
                 </div>
                 <div class="item-info">
                   <p class="item-name">Forte</p>
-                  <p class="item-title"><span class="item-title-block">Отличный макет</span><span class="item-title-block"> для личного блога</span></p>
+                  <p class="item-title">Отличный макет<br> для личного блога</p>
                   <div class="item-price-btn">
                     <a class="btn btn-add-cart" href="#">5000 р.</a>
                   </div>
@@ -143,7 +142,7 @@
                 </div>
                 <div class="item-info">
                   <p class="item-name">Moder organic thai</p>
-                  <p class="item-title"><span class="item-title-block">Сайт для ресторана</span><span class="item-title-block"> быстрого питания</span></p>
+                  <p class="item-title">Сайт для ресторана быстрого питания</p>
                   <div class="item-price-btn">
                     <a class="btn btn-add-cart" href="#">12000 р.</a>
                   </div>
@@ -157,7 +156,7 @@
                 </div>
                 <div class="item-info">
                   <p class="item-name">Avenue</p>
-                  <p class="item-title"><span class="item-title-block">Макет для блога</span><span class="item-title-block"> о путешествиях</span></p>
+                  <p class="item-title">Макет для блога<br> о путешествиях</p>
                   <div class="item-price-btn">
                     <a class="btn btn-add-cart" href="#">8000 р.</a>
                   </div>
@@ -171,7 +170,7 @@
                 </div>
                 <div class="item-info">
                   <p class="item-name">Dovetail</p>
-                  <p class="item-title"><span class="item-title-block">Интернет магазин</span><span class="item-title-block"> с галереей товаров</span></p>
+                  <p class="item-title">Интернет магазин<br> с галереей товаров</p>
                   <div class="item-price-btn">
                     <a class="btn btn-add-cart" href="#">14000 р.</a>
                   </div>
@@ -186,7 +185,7 @@
             </div>
           </div>
       </div>
-    </main>
+    </div>
     <footer class="main-footer">
       <div class="map clearfix">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124054!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1455906339776" allowfullscreen></iframe>
@@ -223,5 +222,24 @@
         </div>
       </div>
     </footer>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="login-form" action="#" method="post">
+        <div class="form-content left">
+          <label for="user-name">Ваше имя:</label>
+          <input class="user" type="text" name="login" placeholder="Представьтесь,пожалуйста" id="user-name">
+        </div>
+        <div class="form-content right">
+          <label for="user-email">Ваш e-mail:</label>
+          <input class="mail" type="email"  name="email" placeholder="Для отправки ответа" id="user-email">
+        </div>
+        <div class="form-content center">
+          <label for="user-text">Текст письма:</label>
+          <textarea class="textarea" name="text" placeholder="В свободной форме" id="user-text"></textarea>
+        </div>
+        <button class="btn modal-content-btn" type="submit">Отправить</button>
+      </form>
+    </div>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

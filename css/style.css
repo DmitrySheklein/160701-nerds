@@ -10,7 +10,7 @@
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
   display: inline-block;
-
+  vertical-align: baseline;
   font-weight: normal;
   font-family: "symbols-nerds";
   text-transform: none;
@@ -136,10 +136,8 @@ body {
   position: relative;
 
   display: inline-block;
+  vertical-align: middle;
   padding: 25px 0px;
-  /*padding-left: 50px;*/
-  /*padding-right: 1px;*/
-  /*padding-top: 3px;*/
 
   font-size: 14px;
   line-height: 30px;
@@ -240,9 +238,6 @@ body {
   line-height: 22px;
   color: #283136;
 }
-.slider-name-block,.slider-title-block {
-  display: block;
-}
 
 .slider-btn {
   display: block;
@@ -286,12 +281,23 @@ body {
 }
 .features-item {
   display: inline-block;
+  vertical-align: top;
   width: 240px;
   margin-right: 80px;
   font-size: 15px;
 }
 .features-item:nth-child(3n) {
   margin-right: 0;
+}
+
+.features-item:nth-child(1) img{
+  background: #fb565a;
+}
+.features-item:nth-child(2) img{
+  background: #00ca74;
+}
+.features-item:nth-child(3) img{
+  background: #efc84a;
 }
 .btn {
   display: block;
@@ -551,6 +557,7 @@ ul.studio-develop li:before {
 }
 .footer-social-name {
   display: inline-block;
+  vertical-align: top;
   font-size: 36px;
   line-height: 36px;
   font-weight: 1000;
@@ -633,6 +640,7 @@ form {
 .price-controls label {
   font-size: 16px;
   display: inline-block;
+  vertical-align: top;
   width: 50%;
   text-transform: uppercase;
 }
@@ -752,6 +760,14 @@ input.btn {
   font-weight: bold;
   white-space: normal;
 }
+input.btn:hover{
+  background: #e5e5e5;
+}
+input.btn:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0 0 #b5b5b5;
+}
+
 fieldset{
   margin: 0;
   padding: 0;
@@ -809,10 +825,12 @@ fieldset{
 }
 .sort-direction {
   display: inline-block;
+  vertical-align: middle;
   padding-left: 100px;
 }
 .sort-direction span {
   display: inline-block;
+  vertical-align: middle;
   font-size: 23px;
   line-height: 20px;
   color: #c1c1c1;
@@ -834,12 +852,14 @@ fieldset{
 }
 .catalog-item {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   width: 240px;
   margin-right: 80px;
   margin-bottom: 80px;
   border-top: 30px solid #f1f1f1;
   border-radius: 5px;
+  background: #f1f1f1;
 }
 .catalog-item::before {
   content: "";
@@ -864,7 +884,6 @@ fieldset{
 }
 
 .item-info {
-  /*display: inline-block;*/
   display: none;
   position: absolute;
   top: 50%;
@@ -977,11 +996,42 @@ fieldset{
 }
 
 /*Поп ап окно*/
+@keyframes bounce {
+  0%   {
+    transform: translateX(-2000px);
+  }
+  70%  {
+    transform: translateX(30px);
+  }
+  90%  {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-content {
   display: none;
 }
 .modal-content-show {
   display: block;
+  animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
 }
 .modal-content {
   position: absolute;
@@ -1061,13 +1111,12 @@ form.login-form {
 }
 .login-form input[type="text"],
 .login-form input[type="email"],
-.login-form input[type="textarea"] {
-  width: 200px;
+.login-form .textarea {
+  width: 100%;
   margin: 0;
+  box-sizing: border-box;
   margin-bottom: 10px;
   padding: 10px 11px;
-  /*padding-right: 40px;*/
-
   font-size: 12px;
   line-height: 18px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -1079,24 +1128,25 @@ form.login-form {
   border-radius: 3px;
   outline: none;
 }
-.login-form input[type="textarea"] {
-  width: 100%;
+.login-form .textarea {
+  resize: none;
+  height: 115px;
 }
-.login-form input:focus {
+.login-form input:focus,
+.login-form .textarea {
   border-color: #56bffb;
 }
-.login-form input:hover {
+.login-form input:hover,
+.login-form .textarea {
   border-color: #a2a9ac;
 }
 .modal-content-btn {
-  margin-top: 40px;
   padding: 10px 15px;
-  background: #f1f1f1;
   width: 100%;
-  color: #000;
+  color: #fff;
   border: none;
   outline: none;
-  background: #f1f1f1;
+  background: #fb565a;
   cursor: pointer;
   font-size: 12px;
   line-height: 18px;
@@ -1104,9 +1154,9 @@ form.login-form {
   white-space: normal;
 }
 .modal-content-btn:hover {
-   background: #e5e5e5;
+   background-color: #d6494d;
 }
 .modal-content-btn:active {
-  background-color: #d5d5d5;
-  box-shadow: inset 0px 3px 0 0 #b5b5b5;
+  background-color: #b63538;
+  box-shadow: inset 0px 3px 0 0 #9b2d30;
 }
